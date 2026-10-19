@@ -157,6 +157,35 @@ section.panel{padding-block:clamp(2.5rem,6vw,4.5rem);display:grid;gap:clamp(3rem
 footer{border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-between;padding-block:1.6rem}
 
+/* phone */
+@media (max-width:600px){
+  body{font-size:1.0625rem;line-height:1.55}
+  .bar{flex-wrap:nowrap;gap:.75rem;padding-block:.7rem}
+  .brand{gap:.5rem;min-width:0}
+  .logo-mark{width:22px;height:26px}
+  .logo-word{width:96px;height:10px}
+  nav{gap:0}
+  nav button{font-size:.88rem;padding:.6rem .6rem;min-height:40px}
+  section.panel{padding-block:2rem 3rem;gap:3rem}
+  h1{font-size:clamp(2rem,9.5vw,2.6rem);line-height:1.04}
+  h2{font-size:1.5rem}
+  .opener{gap:1.5rem}
+  .lede{font-size:1.15rem}
+  .pull{font-size:1.3rem}
+  .steps li{grid-template-columns:2.2rem minmax(0,1fr);padding-block:1.1rem}
+  .steps li::before{font-size:1.35rem}
+  .bio-head img{width:72px;height:72px}
+  .case{padding:1.2rem}
+  .stat-row{padding-block:1.4rem}
+  .names{font-size:1.15rem;gap:.3rem 1rem}
+  .mail .addr{font-size:clamp(1.3rem,7vw,1.8rem);word-break:normal;overflow-wrap:anywhere}
+  .mail .btn{flex:1 1 auto;justify-content:center;min-height:44px}
+  .links a{padding-block:.9rem}
+  footer .wrap{flex-direction:column;gap:.25rem}
+}
+@media (max-width:360px){
+  .logo-word{display:none}
+}
 @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
 </style>
 
