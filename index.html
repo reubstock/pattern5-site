@@ -117,9 +117,12 @@ section.panel{padding-block:clamp(2.5rem,6vw,4.5rem);display:grid;gap:clamp(3rem
 .bio-head img{width:96px;height:96px;border-radius:50%;object-fit:cover;flex:none;filter:grayscale(.15)}
 .bio-head .role{color:var(--muted);font-style:italic}
 .timeline{list-style:none;margin:0;padding:0;display:grid;gap:.15rem;font-size:1rem}
-.timeline li{display:grid;grid-template-columns:3.4rem minmax(0,1fr);gap:.6rem;padding-block:.45rem;border-bottom:1px solid var(--line)}
+.timeline li{display:grid;grid-template-columns:3.4rem minmax(0,1fr);gap:.6rem;padding-block:.6rem;border-bottom:1px solid var(--line)}
 .timeline .yr{font:600 .95rem/1.6 var(--display);font-variant-numeric:tabular-nums;color:var(--muted)}
-.timeline li.now .yr,.timeline li.now span:last-child{color:var(--accent)}
+.timeline .job{display:grid;gap:.1rem;min-width:0}
+.timeline .org{font-weight:500}
+.timeline .what{font-size:.9rem;line-height:1.4;color:var(--muted)}
+.timeline li.now .yr,.timeline li.now .org{color:var(--accent)}
 .timeline-title{font:700 1rem/1.3 var(--display);margin-bottom:.4rem}
 
 /* clients */
@@ -252,16 +255,16 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-be
       <div>
         <p class="timeline-title">Career</p>
         <ol class="timeline">
-          <li><span class="yr">1999</span><span>OVEN Digital</span></li>
-          <li><span class="yr">2002</span><span>Wynn Resorts</span></li>
-          <li><span class="yr">2004</span><span>Linden Lab, Second Life</span></li>
-          <li><span class="yr">2006</span><span>Millions of Us</span></li>
-          <li><span class="yr">2007</span><span>Virtual Greats</span></li>
-          <li><span class="yr">2010</span><span>IPG Emerging Media Lab</span></li>
-          <li><span class="yr">2011</span><span>Method</span></li>
-          <li><span class="yr">2013</span><span>8 and Up</span></li>
-          <li class="now"><span class="yr">2016</span><span>PATTERN5</span></li>
-          <li><span class="yr">2026</span><span>The Contrarian</span></li>
+          <li><span class="yr">1999</span><span class="job"><span class="org">OVEN Digital</span><span class="what">Designed the universe in 3D</span></span></li>
+          <li><span class="yr">2002</span><span class="job"><span class="org">Wynn Resorts</span><span class="what">Design of a $2.8B casino</span></span></li>
+          <li><span class="yr">2004</span><span class="job"><span class="org">Linden Lab, Second Life</span><span class="what">Design of the first virtual world</span></span></li>
+          <li><span class="yr">2006</span><span class="job"><span class="org">Millions of Us</span><span class="what">Agency for Nike, Coke and Sony</span></span></li>
+          <li><span class="yr">2007</span><span class="job"><span class="org">Virtual Greats</span><span class="what">Invented virtual celebrities</span></span></li>
+          <li><span class="yr">2010</span><span class="job"><span class="org">IPG</span><span class="what">Designed an 8,000 sq ft vision of the future of media</span></span></li>
+          <li><span class="yr">2011</span><span class="job"><span class="org">Method</span><span class="what">Thought leadership for a top design firm</span></span></li>
+          <li><span class="yr">2013</span><span class="job"><span class="org">8 and Up</span><span class="what">Taught 350 third graders entrepreneurship</span></span></li>
+          <li class="now"><span class="yr">2016</span><span class="job"><span class="org">PATTERN5</span><span class="what">Advised XR and AI companies through $500M+ in exits</span></span></li>
+          <li><span class="yr">2026</span><span class="job"><span class="org">The Contrarian</span></span></li>
         </ol>
       </div>
     </div>
