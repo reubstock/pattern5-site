@@ -316,11 +316,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-be
           <span class="addr" id="addr">reubstock@gmail.com</span>
         </div>
         <div class="mail">
-          <button class="btn" id="copy" type="button">Copy email</button>
           <a class="btn" href="mailto:reubstock@gmail.com?subject=PATTERN5">Write an email</a>
         </div>
-        <p class="status" id="status" aria-live="polite"></p>
-      </div>
+              </div>
       <ul class="links">
         <li><a href="https://www.linkedin.com/in/reubensteiger/" target="_blank" rel="noopener"><span>LinkedIn</span><span>reubensteiger</span></a></li>
         <li><a href="https://reubensteiger.substack.com" target="_blank" rel="noopener"><span>Fellow Travelers</span><span>Substack</span></a></li>
@@ -365,19 +363,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-be
     show(next,true); document.getElementById("tab-"+next).focus();
   });
 
-  /* ---------- copy email ---------- */
-  const status = document.getElementById("status");
-  document.getElementById("copy").addEventListener("click", ()=>{
-    const addr = document.getElementById("addr").textContent.trim();
-    const fallback = ()=>{
-      const r = document.createRange(); r.selectNodeContents(document.getElementById("addr"));
-      const s = getSelection(); s.removeAllRanges(); s.addRange(r);
-      status.textContent = "Selected. Press Ctrl+C or ⌘C to copy.";
-    };
-    try{
-      navigator.clipboard.writeText(addr).then(()=>{ status.textContent = "Copied to your clipboard."; }, fallback);
-    }catch(e){ fallback(); }
-  });
 
 
   const initial = (location.hash||"").slice(1);
