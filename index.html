@@ -197,6 +197,11 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-be
 @media (max-width:360px){
   .logo-word{display:none}
 }
+.logos{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.logos li{display:flex;align-items:center;justify-content:center;text-align:center;min-height:5.5rem;padding:1rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.logos span{font:700 1.05rem/1.2 var(--display);letter-spacing:-.01em;color:var(--muted)}
+.logos img{max-height:2.4rem;max-width:80%;width:auto;filter:grayscale(1);opacity:.75}
+@media (max-width:600px){.logos{grid-template-columns:repeat(2,minmax(0,1fr))}.logos li{min-height:4.5rem}.logos span{font-size:.98rem}}
 @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
 </style>
 
@@ -310,6 +315,26 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-be
       <div class="stat">$500M+</div>
       <p>in liquidity events for the XR and AI companies PATTERN5 has advised since 2016, including acquisitions by Microsoft, Apple and Epic.</p>
     </div>
+    <ul class="logos" aria-label="Selected clients">
+      <li><span>Nike</span></li>
+      <li><span>Coca-Cola</span></li>
+      <li><span>Sony</span></li>
+      <li><span>Microsoft</span></li>
+      <li><span>Google</span></li>
+      <li><span>Samsung</span></li>
+      <li><span>Intel</span></li>
+      <li><span>Cisco</span></li>
+      <li><span>Toyota</span></li>
+      <li><span>General Motors</span></li>
+      <li><span>Warner Bros</span></li>
+      <li><span>20th Century Fox</span></li>
+      <li><span>NBA</span></li>
+      <li><span>BBC</span></li>
+      <li><span>TED</span></li>
+      <li><span>Wynn Las Vegas</span></li>
+      <li><span>Sagan Foundation</span></li>
+      <li><span>Stanford University</span></li>
+    </ul>
   </section>
 
   <!-- CONTACT -->
