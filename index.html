@@ -205,7 +205,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-be
 .logos li:hover img{filter:none;opacity:1}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .logos img{filter:grayscale(1) invert(1) brightness(1.1);opacity:.8}}
 :root[data-theme="dark"] .logos img{filter:grayscale(1) invert(1) brightness(1.1);opacity:.8}
-.logos .logo-text{font-size:2.1rem;font-weight:800;letter-spacing:-.02em;line-height:1}
+.logos .logo-text{font-size:2.1rem;font-weight:800;letter-spacing:-.02em;line-height:1;transition:color .2s}
+.logos li:hover .logo-text{color:#e62b1e}
 .case-logo{height:40px;width:auto;max-width:100%;object-fit:contain;align-self:flex-start}
 @media (max-width:600px){.logos{grid-template-columns:repeat(2,minmax(0,1fr))}.logos li{min-height:4.5rem}.logos span{font-size:.98rem}}
 @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
