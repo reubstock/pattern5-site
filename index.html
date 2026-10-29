@@ -133,6 +133,8 @@ section.panel{padding-block:clamp(2.5rem,6vw,4.5rem);display:grid;gap:clamp(3rem
 .thesis{display:grid;gap:2rem}
 @media (min-width:900px){ .thesis{grid-template-columns:14rem minmax(0,1fr);gap:3rem} }
 .thesis .prose,.thesis .pull{max-width:none}
+.opener + .thesis{margin-top:calc(-1 * clamp(1.25rem,3vw,2.5rem))}
+.thesis .pull{font-style:italic}
 .pull{font-family:var(--display);font-weight:500;font-size:clamp(1.35rem,2.4vw,1.75rem);line-height:1.2;letter-spacing:-.015em;max-width:var(--col)}
 
 /* method */
